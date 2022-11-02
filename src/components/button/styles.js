@@ -12,7 +12,8 @@ export const Button = styled.button`
   width: fit-content;
 
   &.small {
-    padding: 20px 22px;
+    font-size: 24px;
+    padding: 18px 22px;
   }
 `
 

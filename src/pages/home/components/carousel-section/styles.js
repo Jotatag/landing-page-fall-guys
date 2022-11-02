@@ -5,12 +5,10 @@ import { Container } from '../../../../components/container';
 
 export const CarouselSection = styled(Section)`
   display: flex;
-  height: 1000px;
+  margin-bottom: 150px;
 `
 export const CarouselCirclesContainer = styled.div`
   z-index: 1;
-  width: 230px;
-  flex-shrink: 0;
 `
 
 export const CarouselCircles = styled.span`

@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 export const Logo = styled.img`
-  max-width: 85px;
+  max-width: 74px;
 
-  &.min {
-    max-width: 74px;
+  &.small {
+    max-width: 63px;
   }
 `
