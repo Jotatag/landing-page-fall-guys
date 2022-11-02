@@ -4,15 +4,11 @@ import * as Styles from './styles';
 
 import Navbar from '../../../../components/navbar';
 import { Button } from '../../../../components/button';
+import Platforms from '../../../../components/platforms';
 
 import avatar from '../../../../assets/images/avatar.png';
 import avatar2 from '../../../../assets/images/avatar2.png';
 import mascot from '../../../../assets/images/mascot.png';
-
-import epic from '../../../../assets/images/plataform-epic.png';
-import psn from '../../../../assets/images/plataform-psn.png';
-import nintendo from '../../../../assets/images/plataform-nintendo.png';
-import xbox from '../../../../assets/images/plataform-xbox.png';
 
 const BannerSection = () => {
     return (
@@ -33,12 +29,7 @@ const BannerSection = () => {
                         <Styles.BannerDivider />
                         <Styles.BannerPlataforms>
                             <span className='transparent'>Integração com as maiores plataformas do mundo</span>
-                            <div>
-                                <img src={epic} alt='Epic' />
-                                <img src={psn} alt='PSN' />
-                                <img src={nintendo} alt='Nintendo Switch' />
-                                <img src={xbox} alt='Xbox' />
-                            </div>
+                            <Platforms />
                         </Styles.BannerPlataforms>
                     </Styles.BannerText>
                 </Styles.BannerInfo>
