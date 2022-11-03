@@ -23,7 +23,7 @@ const Footer = () => {
                         <ul>
                             <li><a href='#'>Início</a></li>
                             <li><a href='#'>Temporada atual</a></li>
-                            <li><a href='#'>Teporadas anteriores</a></li>
+                            <li><a href='#'>Temporadas anteriores</a></li>
                             <li><a href='#'>Notícias</a></li>
                             <li><a href='#'>Baixe agora</a></li>
                         </ul>

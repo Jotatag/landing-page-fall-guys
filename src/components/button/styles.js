@@ -13,7 +13,7 @@ export const Button = styled.button`
 
   &.small {
     font-size: 24px;
-    padding: 18px 22px;
+    padding: 18px 34px;
   }
 `
 
