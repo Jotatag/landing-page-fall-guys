@@ -7,6 +7,7 @@ import Divider from '../divider';
 import Platforms from '../platforms';
 
 import classification from '../../assets/images/classification.png';
+import {ReactComponent as ArrowUp} from '../../assets/images/arrow_up.svg';
 
 const Footer = () => {
     return (
@@ -15,6 +16,7 @@ const Footer = () => {
                 <Styles.FooterHeader>
                     <Logo className='small' />
                     <div className='transparent'>
+                        <ArrowUp width={15} />
                         Voltar ao topo
                     </div>
                 </Styles.FooterHeader>

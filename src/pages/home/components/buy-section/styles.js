@@ -20,8 +20,8 @@ export const BuyContainer = styled(Container)`
 `
 
 export const BuyMascot = styled.img`
-  margin-top: 100px;
-  margin-left: -150px;
+  margin-top: 60px;
+  margin-left: -100px;
 `
 
 export const BuyInfo = styled.div`
@@ -45,7 +45,9 @@ export const BuyInfo = styled.div`
   span {
     color: ${(props) => props.theme.palette.primary.main};
     font-size: 24px;
+    font-weight: 500;
     margin-top: 45px;
+    max-width: 570px;
   }
 `
 

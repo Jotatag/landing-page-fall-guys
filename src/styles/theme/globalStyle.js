@@ -10,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
   body, html {
     height: 100%;
     font-size: ${(props) => props.theme.typography.sizes.default};
+    font-family: 'Poppins';
   }
 
   button {

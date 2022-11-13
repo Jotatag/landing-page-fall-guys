@@ -22,7 +22,9 @@ export const FooterHeader = styled.div`
   .transparent {
     display: flex;
     align-items: center;
+    gap: 15px;
     opacity: 0.7;
+    text-transform: uppercase;
   }
 `
 
@@ -64,12 +66,13 @@ export const FooterBottom = styled.div`
 
   > div {
     display: flex;
+    align-items: center;
     gap: 20px;
     
     a {
       color: ${(props) => props.theme.palette.primary.main};
       font-size: 15px;
-      font-weight: 600;
+      font-weight: 500;
     }
   }
 `

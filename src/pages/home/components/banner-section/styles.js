@@ -12,6 +12,10 @@ export const BannerSection = styled(Section)`
   height: 850px;
   position: relative;
   z-index: 2;
+
+  nav {
+    margin-bottom: 20px;
+  }
 `
 
 export const BannerContainer = styled(Container)`
@@ -22,13 +26,12 @@ export const BannerInfo = styled.div`
   display: flex;
   flex-direction: column;
   padding: 65px 0;
-  max-width: 600px;
+  max-width: 645px;
 `
 
 export const BannerText = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 5px;
   color: ${(props) => props.theme.palette.primary.main};
 
   h1 {
@@ -41,7 +44,7 @@ export const BannerText = styled.div`
   }
 
   p {
-    max-width: 530px;
+    max-width: 550px;
   }
 
   .transparent {

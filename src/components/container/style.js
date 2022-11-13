@@ -6,5 +6,5 @@ export const ContainerFluid = styled.div`
 `
 export const Container = styled.div`
   margin: 0 auto;
-  max-width: calc(80ch + 700px);
+  max-width: calc(70ch + 700px);
 `

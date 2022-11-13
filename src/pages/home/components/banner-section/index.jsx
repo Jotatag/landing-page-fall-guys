@@ -3,6 +3,7 @@ import React from "react";
 import * as Styles from './styles';
 
 import Navbar from '../../../../components/navbar';
+import Divider from '../../../../components/divider';
 import { Button } from '../../../../components/button';
 import Platforms from '../../../../components/platforms';
 
@@ -14,6 +15,7 @@ const BannerSection = () => {
     return (
         <Styles.BannerSection>
             <Navbar />
+            <Divider />
             <Styles.BannerContainer>
                 <Styles.BannerInfo>
                     <Styles.BannerText>
