@@ -4,6 +4,8 @@ import Section from '../../../../components/section';
 import { Container } from '../../../../components/container';
 import Divider from '../../../../components/divider';
 
+import { device } from '../../../../styles/theme/devices';
+
 import background from '../../../../assets/images/background-header2.png';
 
 export const BannerSection = styled(Section)`
@@ -13,6 +15,19 @@ export const BannerSection = styled(Section)`
   position: relative;
   z-index: 2;
 
+  @media ${device.laptopS} {
+    background-position-y: -75px;
+    height: 775px;
+  }
+
+  @media ${device.laptop} {
+    height: 900px;
+  }
+
+  @media ${device.mobileM} {
+    height: 1000px;
+  }
+
   nav {
     margin-bottom: 20px;
   }
@@ -20,6 +35,10 @@ export const BannerSection = styled(Section)`
 
 export const BannerContainer = styled(Container)`
   display: flex;
+
+  @media ${device.laptop} {
+    flex-direction: column;
+  }
 `
 
 export const BannerInfo = styled.div`
@@ -27,6 +46,15 @@ export const BannerInfo = styled.div`
   flex-direction: column;
   padding: 65px 0;
   max-width: 645px;
+
+  @media ${device.laptopS} {
+    padding: 35px 0;
+    max-width: 490px;
+  }
+
+  @media ${device.laptop} {
+    align-self: center;
+  }
 `
 
 export const BannerText = styled.div`
@@ -34,22 +62,47 @@ export const BannerText = styled.div`
   flex-direction: column;
   color: ${(props) => props.theme.palette.primary.main};
 
+  @media ${device.laptop} {
+    align-items: center;
+  }
+
   h1 {
     font-size: 64px;
+
+    @media ${device.laptopS} {
+      font-size: 48px;
+    }
+
+    @media ${device.laptop} {
+      font-size: 36px;
+      text-align: center;
+    }
   }
 
   h2 {
     color: ${(props) => props.theme.palette.primary.contrastText};
     font-size: 28px;
+
+    @media ${device.laptopS} {
+      font-size: 20px;
+    }
   }
 
   p {
     max-width: 550px;
+
+    @media ${device.laptop} {
+      display: none;
+    }
   }
 
   .transparent {
     color: ${(props) => props.theme.palette.primary.main};
     opacity: 0.7;
+
+    @media ${device.laptop} {
+      font-size: 14px;
+    }
   }
 `
 
@@ -76,6 +129,31 @@ export const BannerMascotContainer = styled.div`
     position: absolute;
     top: 70px;
     right: 60px;
+
+    @media ${device.laptopL} {
+      right: -35px;
+    }
+
+    @media ${device.laptopM} {
+      top: 150px;
+      right: -45px;
+      width: 500px;
+    }
+
+    @media ${device.laptopS} {
+      top: 130px;
+      right: -50px;
+      width: 450px;
+    }
+
+    @media ${device.laptop} {
+      top: 0;
+      left: 0; 
+      right: 0; 
+      margin-left: auto; 
+      margin-right: auto; 
+      width: 250px;
+    }
   }
 `
 

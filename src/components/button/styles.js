@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { device } from '../../styles/theme/devices';
+
 export const Button = styled.button`
   border: none;
   border-radius: 10px;
@@ -14,6 +16,10 @@ export const Button = styled.button`
   &.small {
     font-size: 24px;
     padding: 18px 34px;
+
+    @media ${device.laptopS} {
+      font-size: 20px;
+    }
   }
 `
 

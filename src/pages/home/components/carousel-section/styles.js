@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import Section from '../../../../components/section';
 import { Container } from '../../../../components/container';
 
+import { device } from '../../../../styles/theme/devices';
+
 export const CarouselSection = styled(Section)`
   display: flex;
   justify-content: space-between;
@@ -12,6 +14,18 @@ export const CarouselCirclesContainer = styled.div`
   flex-shrink: 0;
   width: 200px;
   z-index: 1;
+
+  @media ${device.laptopL} {
+    width: 120px;
+  }
+
+  @media ${device.tablet} {
+    width: 40px;
+  }
+
+  @media ${device.mobileL} {
+    width: 0;
+  }
 `
 
 export const CarouselCircles = styled.span`
@@ -36,6 +50,10 @@ export const CarouselFirstLeftCircle = styled(CarouselCircles)`
     height: 1204px;
     top: -400px;
     left: -1275px;
+
+    @media ${device.mobileL} {
+      display: none;
+    }
   }
 `
 
@@ -45,6 +63,10 @@ export const CarouselSecondLeftCircle = styled(CarouselCircles)`
     height: 1371px;
     top: -480px;
     left: -1365px;
+
+    @media ${device.tablet} {
+      display: none;
+    }
   }
 `
 
@@ -54,6 +76,10 @@ export const CarouselThirdLeftCircle = styled(CarouselCircles)`
     height: 1525px;
     top: -550px;
     left: -1440px;
+
+    @media ${device.laptopL} {
+      display: none;
+    }
   }
 `
 
@@ -63,6 +89,18 @@ export const CarouselFirstRightCircle = styled(CarouselCircles)`
     height: 1204px;
     top: -380px;
     right: -1475px;
+
+    @media ${device.laptopL} {
+      right: -1395px;
+    }
+
+    @media ${device.tablet} {
+      right: -1315px;
+    }
+
+    @media ${device.mobileL} {
+      display: none;
+    }
   }
 `
 
@@ -72,6 +110,14 @@ export const CarouselSecondRightCircle = styled(CarouselCircles)`
     height: 1371px;
     top: -470px;
     right: -1570px;
+
+    @media ${device.laptopL} {
+      right: -1485px;
+    }
+
+    @media ${device.tablet} {
+      display: none;
+    }
   }
 `
 
@@ -81,6 +127,10 @@ export const CarouselThirdRightCircle = styled(CarouselCircles)`
     height: 1525px;
     top: -550px;
     right: -1650px;
+
+    @media ${device.laptopL} {
+      display: none;
+    }
   }
 `
 
@@ -103,7 +153,7 @@ export const CarouselContainerImages = styled.div`
   display: flex;
   overflow-x: scroll;
   scrollbar-width: none;
-  gap: 20px;
+  gap: 15px;
 
   &::-webkit-scrollbar {
     display: none;
