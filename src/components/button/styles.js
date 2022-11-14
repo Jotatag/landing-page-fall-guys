@@ -13,12 +13,21 @@ export const Button = styled.button`
   margin: 30px 0;
   width: fit-content;
 
+  @media ${device.mobileM} {
+    font-size: 18px;
+    padding: 20px 70px;
+  }
+
   &.small {
     font-size: 24px;
     padding: 18px 34px;
 
     @media ${device.laptopS} {
       font-size: 20px;
+    }
+
+    @media ${device.mobileS} {
+      font-size: 18px;
     }
   }
 `

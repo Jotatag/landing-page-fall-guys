@@ -22,6 +22,10 @@ export const FooterContainer = styled(Container)`
   @media ${device.mobileM} {
     font-size: 14px;
   }
+
+  @media ${device.mobileS} {
+    font-size: 12px;
+  }
 `
 
 export const FooterHeader = styled.div`
@@ -32,7 +36,7 @@ export const FooterHeader = styled.div`
   .transparent {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 5px;
     opacity: 0.7;
     text-transform: uppercase;
   }
@@ -46,20 +50,15 @@ export const FooterNav = styled.div`
   padding: 0 5px;
 
   @media ${device.tablet} {
-    flex-direction: column;
     gap: 20px;
 
     img {
       width: 90px;
       align-self: flex-end;
-    }
-  }
 
-  @media ${device.mobileL} {
-    flex-direction: row;
-
-    img {
-      width: 70px;
+      @media ${device.mobileM} {
+        width: 60px;
+      }
     }
   }
 
@@ -75,7 +74,7 @@ export const FooterNav = styled.div`
       row-gap: 5px;
       list-style: none;
 
-      @media ${device.mobileL} {
+      @media ${device.tablet} {
         grid-template-rows: repeat(5, 1fr);
       }
 
@@ -93,6 +92,14 @@ export const FooterCopyright = styled.div`
   
   @media ${device.tablet} {
     text-align: center;
+  }
+
+  @media ${device.mobileM} {
+    font-size: 14px;
+  }
+
+  @media ${device.mobileS} {
+    font-size: 12px;
   }
 `
 
@@ -121,6 +128,14 @@ export const FooterBottom = styled.div`
       color: ${(props) => props.theme.palette.primary.main};
       font-size: 15px;
       font-weight: 500;
+
+      @media ${device.mobileM} {
+        font-size: 14px;
+      }
+
+      @media ${device.mobileS} {
+        font-size: 12px;
+      }
     }
   }
 `

@@ -53,6 +53,18 @@ export const BuyMascot = styled.img`
     margin-left: auto; 
     margin-right: auto; 
   }
+
+  @media ${device.mobileL} {
+    width: 380px;
+  }
+
+  @media ${device.mobileM} {
+    width: 300px;
+  }
+
+  @media ${device.mobileS} {
+    width: 280px;
+  }
 `
 
 export const BuyInfo = styled.div`
@@ -63,6 +75,14 @@ export const BuyInfo = styled.div`
   @media ${device.laptop} {
     margin-top: 270px;
     padding: 0 20px;
+  }
+
+  @media ${device.mobileM} {
+    margin-top: 200px;
+  }
+
+  @media ${device.mobileS} {
+    margin-top: 180px;
   }
 
   h2 {
@@ -82,6 +102,11 @@ export const BuyInfo = styled.div`
     @media ${device.laptop} {
       font-size: 48px;
       line-height: 50px;
+    }
+
+    @media ${device.mobileS} {
+      font-size: 36px;
+      line-height: 40px;
     }
   }
 
@@ -121,6 +146,10 @@ export const BuyInfo = styled.div`
     @media ${device.laptop} {
       font-size: 16px;
     }
+
+    @media ${device.mobileS} {
+      font-size: 14px;
+    }
   }
 `
 
@@ -128,7 +157,7 @@ export const BuyButtons = styled.div`
   display: flex;
   gap: 20px;
 
-  @media ${device.mobileL} {
+  @media ${device.tablet} {
     flex-direction: column;
     align-items: center;
     margin: 30px 0;
@@ -136,6 +165,10 @@ export const BuyButtons = styled.div`
     button {
       margin: 0 !important;
       width: 250px;
+
+      @media ${device.mobileS} {
+        width: 220px;
+      }
     }
   }
 `

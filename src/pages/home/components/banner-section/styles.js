@@ -24,8 +24,9 @@ export const BannerSection = styled(Section)`
     height: 900px;
   }
 
-  @media ${device.mobileM} {
-    height: 1000px;
+  @media ${device.mobileL} {
+    background-position-y: 0;
+    height: 950px;
   }
 
   nav {
@@ -102,6 +103,10 @@ export const BannerText = styled.div`
 
     @media ${device.laptop} {
       font-size: 14px;
+    }
+
+    @media ${device.mobileS} {
+      font-size: 12px;
     }
   }
 `

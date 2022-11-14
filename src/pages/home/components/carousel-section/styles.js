@@ -147,6 +147,14 @@ export const CarouselContainerText = styled.div`
   max-width: 385px;
   margin-bottom: 50px;
   width: 100%;
+
+  @media ${device.tablet} {
+    font-size: 28px;
+  }
+
+  @media ${device.mobileS} {
+    font-size: 24px;
+  }
 `
 
 export const CarouselContainerImages = styled.div`

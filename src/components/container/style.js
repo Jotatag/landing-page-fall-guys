@@ -24,6 +24,7 @@ export const Container = styled.div`
 
   @media ${device.laptop} {
     max-width: 700px;
+    padding: 0 20px;
   }
 
   @media ${device.mobileL} {
