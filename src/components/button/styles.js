@@ -9,18 +9,20 @@ export const Button = styled.button`
   color: ${(props) => props.theme.palette.tertiary.contrastText};
   background-color: ${(props) => props.theme.palette.tertiary.main};
   font-size: 20px;
+  font-family: 'Poppins';
+  font-weight: 500;
   padding: 20px 115px;
   margin: 30px 0;
   width: fit-content;
 
-  @media ${device.mobileM} {
+  @media ${device.mobileL} {
     font-size: 18px;
     padding: 20px 70px;
   }
 
   &.small {
     font-size: 24px;
-    padding: 18px 34px;
+    padding: 18px 22px;
 
     @media ${device.laptopS} {
       font-size: 20px;

@@ -127,7 +127,7 @@ export const FooterBottom = styled.div`
     a {
       color: ${(props) => props.theme.palette.primary.main};
       font-size: 15px;
-      font-weight: 500;
+      font-weight: 600;
 
       @media ${device.mobileM} {
         font-size: 14px;

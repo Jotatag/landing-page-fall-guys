@@ -12,6 +12,10 @@ export const BuySection = styled(Section)`
   background-repeat: no-repeat;
   position: relative;
   z-index: 2;
+
+  @media ${device.tablet} {
+    background-position-x: -400px;
+  }
 `
 
 export const BuyContainer = styled(Container)`
@@ -27,7 +31,12 @@ export const BuyContainer = styled(Container)`
 
   @media ${device.laptop} {
     flex-direction: column;
-    margin-top: 195px;
+    margin-top: 250px;
+    padding-bottom: 30px;
+  }
+
+  @media ${device.mobileL} {
+    margin-top: 200px;
   }
 `
 
@@ -70,11 +79,15 @@ export const BuyMascot = styled.img`
 export const BuyInfo = styled.div`
   display: flex;
   flex-direction: column;
-  padding-top: 80px;
+  padding-top: 135px;
 
   @media ${device.laptop} {
     margin-top: 270px;
     padding: 0 20px;
+  }
+
+  @media ${device.tablet} {
+    text-align: center;
   }
 
   @media ${device.mobileM} {
@@ -132,7 +145,7 @@ export const BuyInfo = styled.div`
     color: ${(props) => props.theme.palette.primary.main};
     font-size: 24px;
     font-weight: 500;
-    margin-top: 45px;
+    margin-top: 35px;
     max-width: 570px;
 
     @media ${device.laptopL} {

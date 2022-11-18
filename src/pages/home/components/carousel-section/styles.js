@@ -24,7 +24,7 @@ export const CarouselCirclesContainer = styled.div`
   }
 
   @media ${device.mobileL} {
-    width: 0;
+    width: 20px;
   }
 `
 
@@ -52,7 +52,7 @@ export const CarouselFirstLeftCircle = styled(CarouselCircles)`
     left: -1275px;
 
     @media ${device.mobileL} {
-      display: none;
+      left: -1295px;
     }
   }
 `
@@ -99,7 +99,7 @@ export const CarouselFirstRightCircle = styled(CarouselCircles)`
     }
 
     @media ${device.mobileL} {
-      display: none;
+      right: -1315px;
     }
   }
 `
@@ -138,9 +138,31 @@ export const CarouselContainer = styled(Container)`
   margin: 0 20px;
   overflow: hidden;
   width: 100%;
+
+  @media ${device.mobileL} {
+    margin: 0 10px;
+  }
+
+  @media ${device.mobileM} {
+    margin: 0 5px;
+  }
 `
 
-export const CarouselContainerText = styled.div`
+export const CarouselHeader = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  svg {
+    align-self: center;
+
+    @media ${device.tablet} {
+      display: none;
+    }
+  }
+`
+
+export const CarouselContainerTitle = styled.div`
   color: ${(props) => props.theme.palette.secondary.main};
   font-size: 32px;
   font-weight: 700;
@@ -160,11 +182,20 @@ export const CarouselContainerText = styled.div`
 export const CarouselContainerImages = styled.div`
   display: flex;
   overflow-x: scroll;
-  scrollbar-width: none;
   gap: 15px;
-
+  padding-bottom: 5px;
+  
   &::-webkit-scrollbar {
-    display: none;
+    height: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 9px;
+    height: 5px;
+    background-color: ${(props) => props.theme.palette.tertiary.main};
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #c1218f;
   }
 `
-

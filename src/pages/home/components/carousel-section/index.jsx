@@ -7,6 +7,8 @@ import img2 from '../../../../assets/images/carousel2.png';
 import img3 from '../../../../assets/images/carousel3.png';
 import img4 from '../../../../assets/images/carousel4.png';
 
+import {ReactComponent as Pagination} from '../../../../assets/images/carousel_pagination.svg';
+
 const CarouselSection = () => {
     return (
         <Styles.CarouselSection>
@@ -17,9 +19,12 @@ const CarouselSection = () => {
             </Styles.CarouselCirclesContainer>
 
             <Styles.CarouselContainer>
-                <Styles.CarouselContainerText>
-                    Resumo das novidades de Fall Guys
-                </Styles.CarouselContainerText>
+                <Styles.CarouselHeader>
+                    <Styles.CarouselContainerTitle>
+                        Resumo das novidades de Fall Guys
+                    </Styles.CarouselContainerTitle>
+                    <Pagination />
+                </Styles.CarouselHeader>
 
                 <Styles.CarouselContainerImages>
                     <img src={img1} alt='Carrossel 1' />

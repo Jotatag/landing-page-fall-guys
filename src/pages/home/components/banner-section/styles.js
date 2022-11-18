@@ -24,8 +24,8 @@ export const BannerSection = styled(Section)`
     height: 900px;
   }
 
-  @media ${device.mobileL} {
-    background-position-y: 0;
+  @media ${device.tablet} {
+    background-position: -120px 0;
     height: 950px;
   }
 
