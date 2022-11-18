@@ -5,6 +5,8 @@ Simple landing page of the game Fall Guys using React and Styled Components.
 Disclaimer: All images and logos are copyright to their respective owners.
 This project is not for profit.
 
+UX/UI by: Elias Coelho
+
 <div align="center">
     <img src="https://i.imgur.com/B4sYeGC.jpg"  align="center" />
 </div>
